@@ -98,8 +98,3 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
-
-
-
-
-
