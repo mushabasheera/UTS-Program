@@ -18,6 +18,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "G" and anda == "K"):
         print("Saya menang!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -27,6 +28,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "G" and anda == "B"):
         print("Anda menang!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -36,6 +38,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "B" and anda == "G"):
         print("Batu mengalahkan Gunting, Saya menang!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -45,6 +48,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "K" and anda == "B"):
         print("Kertas mengalahkan Batu, Saya menang!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -54,6 +58,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "B" and anda == "K"): 
         print("Batu mengalahkan Kertas, Anda menang!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -63,6 +68,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "K" and anda == "K"):
         print("Draw, tidak menang dan tidak kalah!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -72,6 +78,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "B" and anda == "B"):
         print("Draw, tidak menang dan tidak kalah!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -81,6 +88,7 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
     elif(saya == "G" and anda == "G"):
         print("Draw, tidak menang dan tidak kalah!")
         start_again = str(input("Lanjutkan permainan? (y/t)"))
@@ -90,3 +98,4 @@ while(start_game == "y"):
             break
         else:
             print("Input salah!")
+            break
