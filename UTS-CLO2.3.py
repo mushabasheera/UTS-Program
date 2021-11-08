@@ -1,8 +1,6 @@
 #UTS-CLO2.3
 
-start_game = str(input("Mulai permainan? (y/t)"))
-
-while(start_game == "y"):
+while True:
     print("Batu, Kertas, Gunting - Jankenpon !!!")
     print("")
     print("Pilihlah senjata: [B]atu, [K]ertas, [G]unting")
