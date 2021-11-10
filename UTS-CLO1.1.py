@@ -15,5 +15,3 @@ print(" ")
 print("Anda mungkin berpikir bahwa ini adalah ", benda4)
 print("Ya, benar sekali itu")
 print("-" * 60)
-
-
