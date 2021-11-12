@@ -6,6 +6,7 @@ tempat = str(input("Masukan nama tempat: "))
 cuaca  = str(input("Masukan kata adjektif/sifat (suasana/cuaca): "))
 benda4 = str(input("Masukan sebuah kata benda lagi: "))
 
+#hasil output:
 print("-" * 60)
 print("Berbaik hatilah kepada ", benda1, "dan ", benda2)
 print("Bagi manusia, walau hanya memiliki ", benda3)
