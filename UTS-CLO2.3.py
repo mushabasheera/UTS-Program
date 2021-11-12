@@ -4,8 +4,8 @@ while True:
     print("Batu, Kertas, Gunting - Jankenpon !!!")
     print("")
     print("Pilihlah senjata: [B]atu, [K]ertas, [G]unting")
-    anda = str(input("Anda memilih: "))
-    saya = str(input("Saya memilih: "))
+    anda = str(input("Anda memilih: ")).upper()
+    saya = str(input("Saya memilih: ")).upper()
 
     if(saya == "K" and anda == "G"):
         print("Anda menang!")  
