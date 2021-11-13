@@ -3,10 +3,12 @@
 def main_game():
     def start_again():
             """Berfungsi untuk menampilkan opsi lanjutkan permainan"""
+            y = True
+            t = False
             start_again = str(input("Lanjutkan permainan? (y/t)")).lower()
-            if(start_again == "y"): 
+            if(start_again == y): 
                 main_game()
-        
+               
     print("Batu, Kertas, Gunting - Jankenpon !!!")
     print("")
     print("Pilihlah senjata: [B]atu, [K]ertas, [G]unting")
@@ -41,7 +43,7 @@ def main_game():
 
     elif(saya == "K" and anda == "K"):
         print("Draw, tidak menang dan tidak kalah!")
-        start_again
+        start_again()
 
     elif(saya == "B" and anda == "B"):
         print("Draw, tidak menang dan tidak kalah!")
