@@ -159,8 +159,5 @@ if(winner_check() == "X"):
 elif(winner_check() == "O"):
     pemenang = "Komputer"
 
+papan_tictactoe()
 print("Pemenangnya adalah = " + pemenang + "!")
-
-        
-    
-    
