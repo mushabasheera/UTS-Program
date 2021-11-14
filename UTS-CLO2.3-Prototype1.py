@@ -1,14 +1,14 @@
 #UTS-CLO2.3
+#HANYA UNTUK PERCOBAAN
+
+def start_again():
+    """Berfungsi untuk menampilkan opsi lanjutkan permainan"""
+    start_again = str(input("Lanjutkan permainan? (y/t)")).lower()
+    if(start_again == "y"): 
+        return main_game()
 
 def main_game():
-    def start_again():
-            """Berfungsi untuk menampilkan opsi lanjutkan permainan"""
-            y = True
-            t = False
-            start_again = str(input("Lanjutkan permainan? (y/t)")).lower()
-            if(start_again == y): 
-                main_game()
-               
+    
     print("Batu, Kertas, Gunting - Jankenpon !!!")
     print("")
     print("Pilihlah senjata: [B]atu, [K]ertas, [G]unting")
