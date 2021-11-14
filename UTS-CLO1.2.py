@@ -31,6 +31,7 @@ while True:
     #jika pilihan salah (bukan 1, 2, 3 atau 4 maka perintah else akan dijalankan)
     else:
         print("Salah input!")
+        continue
     
     #setelah penghitungan selesai, user akan diberi pilihan untuk lanjut atau tidak
     pilihan_lanjutan = str(input("Lanjutkan lagi? (y/t)"))
