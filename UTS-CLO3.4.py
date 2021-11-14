@@ -1,13 +1,14 @@
-from random import randrange
-import time
+from random import randrange #importing randrange functions from random module
+import time #importing time module for delaying computer's turn
 
 def show_instruction():
-    
+    """Showing instruction before playing the game"""
     print("Selamat datang di permainan Tic-Tac-Toe!")
     print("Anda akan bermain sebagai 'X' dan komputer akan bermain sebagai 'O'. Pilih nomor dibawah untuk bermain")
     print("-"*30)
     print(" ")
 
+#coloumns variable
 kotak1 = False
 kotak2 = False
 kotak3 = False
@@ -19,12 +20,14 @@ kotak8 = False
 kotak9 = False
 
 def check_kotak():
+    """will check if there is an empty box or not. If it is, it will give True and it will ask you for a number of coloumn"""
     if(kotak1 != False and kotak2 != False and kotak3 != False and kotak4 != False and kotak5 != False and kotak6 != False and kotak7 != False and kotak8 != False and kotak9 != False):
         return False
     else:
         return True
 
 def isian_kotak(kotak):
+    """will show values in your tic tac toe table"""
     if(kotak == 1 and kotak1 != False):
         return kotak1
     elif(kotak == 2 and kotak2 != False):
@@ -47,6 +50,7 @@ def isian_kotak(kotak):
         return str(kotak)
 
 def winner_check():
+    """always check the winner after user/computer input a value"""
     if(kotak1 == kotak2 == kotak3):
         return kotak1
     elif(kotak4 == kotak5 == kotak6):
@@ -68,7 +72,7 @@ def winner_check():
     
 
 def papan_tictactoe():
-    """papan tictactoe"""
+    """papan tictactoe that will appear in your game"""
 
     print("| ", isian_kotak(1), " | ", isian_kotak(2), " | ", isian_kotak(3), " |")
     print("-------------------")
@@ -76,8 +80,10 @@ def papan_tictactoe():
     print("-------------------")
     print("| ", isian_kotak(7), " | ", isian_kotak(8), " | ", isian_kotak(9), " |")
 
+#showing the instruction
 show_instruction()
 
+#executing codes and def-functions
 while(check_kotak() and winner_check() == False):
     papan_tictactoe()
     
@@ -153,11 +159,14 @@ while(check_kotak() and winner_check() == False):
             time.sleep(1)
             break
 
-pemenang = ""
+pemenang = "" #an empty variabel for the winner
+
+#checking who is the winner
 if(winner_check() == "X"):
     pemenang = "Pemain"
 elif(winner_check() == "O"):
     pemenang = "Komputer"
 
+#last papan_tictactoe() appearance and annoucing the winner
 papan_tictactoe()
 print("Pemenangnya adalah = " + pemenang + "!")
